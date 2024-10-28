@@ -1,10 +1,9 @@
-# Renode setup
-The Raspberry Pico needs configuration files for Renode to work properly.
+# Lab 05: Realtime
+![example workflow](https://github.com/uofu-emb/2024-lab5-jonathan-elmir/actions/workflows/main.yml/badge.svg)
 
-* On MacOS, the installation location is `/Applications/Renode.app/Contents/MacOs`
-* On Linux, the location for Debian, Fedora, and Arch is `/opt/renode`
-* On Windows, the location is `C://Program Files/Renode`
+## By: Elmir and Jonathan
 
-To add the Pico configuration files:
-1. Copy `rp2040_spinlock.py` and `rp2040_divider.py` to the `scripts/pydev` directory of your Renode installation.
-1. Copy `rpi_pico_rp2040_w.repl` to the `platforms/cpus` directory.
+In this lab, we measured and gathered data using the oscilliscope. We used the stats function to transfer all the stats to a usb as a png.  Then, we created csv files to create tables for the data measured as depicted in the png. From these csv files, we analyzed and calulated jitter and drift, which will be shown in the table below.
+
+# Table showing data from png + calculations
+
