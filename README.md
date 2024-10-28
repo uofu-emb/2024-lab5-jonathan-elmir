@@ -7,3 +7,12 @@ In this lab, we measured and gathered data using the oscilliscope. We used the s
 
 # Table showing data from png + calculations
 
+|   Delay Type   |   Desired Frequency   |   Actual Frequency  |   Duty Cycle  |   Period   |   Jitter   |   Drift   |
+|-------|-------|-------|-------|-------|-------|-------|
+| sleep | 1 Hz |  1 Hz | Row 1 | Row 1 | Row 1 | Row 1 |
+| sleep_delay |  1 Hz | Row 2 | Row 2 | Row 2 | Row 2 | Row 2 |
+| task |  1 Hz | Row 3 | Row 3 | Row 3 | Row 3 | Row 3 |
+| task_delay |  1 Hz | Row 4 | Row 4 | Row 4 | Row 4 | Row 4 |
+| timer | 1 Hz | Row 5 | Row 5 | Row 5 | Row 5 | Row 5 |
+| timer_delay | 1 Hz | Row 6 | Row 6 | Row 6 | Row 6 | Row 6 |
+
