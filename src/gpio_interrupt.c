@@ -5,6 +5,9 @@
 int toggle = 1;
 void irq_callback(uint gpio, uint32_t event_mask)
 {
+    // add nasty compuaton for callback
+    for (int i = 0; i < 1000000; i++);
+    
     if (gpio != IN_PIN) return;
     toggle = !toggle;
     if (event_mask & GPIO_IRQ_EDGE_RISE) {
