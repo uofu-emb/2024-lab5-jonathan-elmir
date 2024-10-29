@@ -13,7 +13,7 @@ expected_drift = abs|drift-expected_drift|
 # Activity 1: Table showing data from png + calculations
 
 |   Delay Type   | Period   |   Desired Frequency   |   Actual Frequency  |   Duty Cycle  |     Drift (1hr) |   
-|-------|-------|-------|-------|-------|-------|-------|
+|-------|-------|-------|-------|-------|-------|
 | sleep       |  199.9988 ms | 5 Hz  | 5.00002 Hz | 50.00 %| 0.02s | 
 | sleep_delay |  231.9964 ms | 5 Hz  | 	4.31035 Hz| 50.00 % | ~576s |
 | task        |  199.9988 ms | 5 Hz  | 4.99997 Hz | 50.00 % | 0.02s| 
