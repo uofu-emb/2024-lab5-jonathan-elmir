@@ -3,16 +3,23 @@
 
 ## By: Elmir and Jonathan
 
-In this lab, we measured and gathered data using the oscilliscope. We used the stats function to transfer all the stats to a usb as a png.  Then, we created csv files to create tables for the data measured as depicted in the png and placed hthem in the DATA directory. From these csv files, we analyzed and calculated jitter and drift, which will be shown in the table below.
+In this lab, we measured and gathered data using the oscilliscope. We used the stats function to transfer all the stats to a usb as a png.  Then, we created csv files to create tables for the data measured as depicted in the png and placed them in the DATA directory. From these csv files, we analyzed and calculated jitter and drift, which will be shown in the table below.
 
-# Table showing data from png + calculations
 
-|   Delay Type   |   Desired Frequency   |   Actual Frequency  |   Duty Cycle  |   Period   |   Jitter   |   Drift   |
+# Activity 1: Table showing data from png + calculations
+
+|   Delay Type   | Period   |   Desired Frequency   |   Actual Frequency  |   Duty Cycle  |     Drift (1hr) |   Jitter   |
 |-------|-------|-------|-------|-------|-------|-------|
-| sleep | 1 Hz |  1 Hz | Row 1 | Row 1 | Row 1 | Row 1 |
-| sleep_delay |  1 Hz | Row 2 | Row 2 | Row 2 | Row 2 | Row 2 |
-| task |  1 Hz | Row 3 | Row 3 | Row 3 | Row 3 | Row 3 |
-| task_delay |  1 Hz | Row 4 | Row 4 | Row 4 | Row 4 | Row 4 |
-| timer | 1 Hz | Row 5 | Row 5 | Row 5 | Row 5 | Row 5 |
-| timer_delay | 1 Hz | Row 6 | Row 6 | Row 6 | Row 6 | Row 6 |
+| sleep       |  199.9988 ms | 5 Hz  | 5.00002 Hz | 50.00 %| 0.02s | Row 1 |
+| sleep_delay |  231.9964 ms | 5 Hz  | 	4.31035 Hz| 50.00 % | | Row 2 |
+| task        |  199.9988 ms | 5 Hz  | 4.99997 Hz | 50.00 % | 0.02s| Row 3 |
+| task_delay  |  232.0056 ms | 5 Hz  | 4.31032 Hz | 50.00 % |  | Row 4 |
+| timer       | 	200.008 ms | 5 Hz  | 4.99997 Hz | 50.00 % | 0.02s | Row 5 |
+| timer_delay | 200.008 ms   | 5 Hz  | 4.99997 Hz | 50.00 %| 0.02s | Row 6 |
 
+We see that the timer is not affected by the additional work on the thread.
+
+# Activity 2: GPIO Interrupt
+When updating the same "busy" task for the GPIO_interrupt, we get that the measured delay between the sync signal and the outpt of the board are: 1.11 microseconds
+
+with the busy work: 2.0084 milliseconds
